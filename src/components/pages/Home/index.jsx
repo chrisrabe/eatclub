@@ -2,12 +2,12 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import Dialog from 'components/common/Dialog';
 import { Container, StyledButton } from './styles';
-import OpportunityContent from './components/OpportunityContent';
+import OppContent from './components/OppContent';
 
 const Home = ({ isOpen, setIsOpen, dialogData, setData }) => {
   const openDialog = useCallback(() => {
     const data = {
-      content: <OpportunityContent />,
+      content: <OppContent />,
     };
     setData(data);
     setIsOpen(true);
