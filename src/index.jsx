@@ -4,13 +4,16 @@ import './index.css';
 import App from 'App';
 import ErrorBoundary from 'components/common/ErrorBoundary';
 import AppThemeProvider from 'components/common/AppThemeProvider';
+import AppProvider from 'components/common/AppProvider';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <ErrorBoundary>
-    <AppThemeProvider>
-      <App />
-    </AppThemeProvider>
+    <AppProvider>
+      <AppThemeProvider>
+        <App />
+      </AppThemeProvider>
+    </AppProvider>
   </ErrorBoundary>,
   document.getElementById('root'),
 );
