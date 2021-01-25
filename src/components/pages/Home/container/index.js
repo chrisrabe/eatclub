@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { setIsOpen } from 'redux/slices/dialog.slice';
+import { setIsOpen, setData } from 'redux/slices/dialog.slice';
 import Home from '../index';
 
 const mapStateToProps = (state) => ({
@@ -7,6 +7,6 @@ const mapStateToProps = (state) => ({
   dialogData: state.dialog.data,
 });
 
-const mapDispatch = { setIsOpen };
+const mapDispatch = { setIsOpen, setData };
 
 export default connect(mapStateToProps, mapDispatch)(Home);
