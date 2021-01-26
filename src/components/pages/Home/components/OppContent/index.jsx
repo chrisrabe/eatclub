@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { IconButton } from '@material-ui/core';
 import { Close } from '@material-ui/icons';
 import { useQuery } from '@apollo/client';
+import Skeleton from 'react-loading-skeleton';
 import OPPORTUNITIES from 'graphql/queries/get.oppos';
 import { useSnackbar } from 'material-ui-snackbar-provider';
 import OppList from './components/OppList';
@@ -39,7 +40,13 @@ const OppContent = () => {
         today.
       </SubText>
       <ListContainer>
-        <OppList items={items} />
+        {loading ? (
+          <div style={{ padding: 20 }}>
+            <Skeleton count={3} height={80} style={{ marginTop: 40 }} />
+          </div>
+        ) : (
+          <OppList items={items} />
+        )}
       </ListContainer>
     </Container>
   );
