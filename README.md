@@ -3,6 +3,10 @@
 Created for EatClub's front-end challenge. Created entirely with React.
 Data is retrieved from a GraphQL endpoint.
 
+[Watch demo here](docs/demo.mp4)
+
+![image](docs/component.png)
+
 ## Getting Started
 
 1. Update the values inside the `.env` file
