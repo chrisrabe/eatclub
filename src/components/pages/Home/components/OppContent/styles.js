@@ -28,3 +28,9 @@ export const SubText = styled.p`
   text-align: center;
   margin: 10px 25px;
 `;
+
+export const ListContainer = styled.div`
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+`;
