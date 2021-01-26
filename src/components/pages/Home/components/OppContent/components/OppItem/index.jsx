@@ -10,7 +10,7 @@ const OppItem = ({ item }) => {
     <Container>
       <Heading>Opportunity</Heading>
       <BodyContainer>
-        <Deal />
+        <Deal value={40} />
         <Info headingText="Time" valueText="8am - 10am" />
         <Info headingText="Expected Customers" valueText="4 - 9 ppl" />
         <StyledButton variant="contained" color="primary">
