@@ -26,7 +26,7 @@ const OppList = ({ items }) => {
     <List>
       {items.map((item, index) => (
         <StyledListItem key={`item-${index}`}>
-          <OppItem item={item} />
+          <OppItem item={item} index={index} />
         </StyledListItem>
       ))}
     </List>

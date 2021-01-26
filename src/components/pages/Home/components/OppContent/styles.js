@@ -31,6 +31,6 @@ export const SubText = styled.p`
 
 export const ListContainer = styled.div`
   width: 100%;
-  height: 450px;
+  height: 480px;
   overflow-y: scroll;
 `;

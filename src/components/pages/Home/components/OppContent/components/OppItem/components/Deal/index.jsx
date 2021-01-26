@@ -9,7 +9,7 @@ const Deal = ({ value }) => (
   <Container>
     <Info
       headingText="Deal"
-      valueText={`${value}%`}
+      valueText={value}
       valueStyle={{ fontSize: 35, fontWeight: 800, color: colors.primary }}
     />
     <ButtonContainer>
@@ -24,7 +24,7 @@ const Deal = ({ value }) => (
 );
 
 Deal.propTypes = {
-  value: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 export default Deal;

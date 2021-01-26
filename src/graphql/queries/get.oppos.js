@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-const GetOpportunities = gql`
+const OPPORTUNITIES = gql`
   query GetOpportunities {
     opposForToday(restId: "chris") {
       objectId
@@ -12,4 +12,4 @@ const GetOpportunities = gql`
   }
 `;
 
-export default GetOpportunities;
+export default OPPORTUNITIES;
